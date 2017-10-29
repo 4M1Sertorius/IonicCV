@@ -1,3 +1,4 @@
+//Declares the used modules and libraries of Components folder Asko Mikkola 1600397
 import { NgModule } from '@angular/core';
 import { IonicModule } from 'ionic-angular';
 import { LoginFormComponent } from './login-form/login-form.component';

@@ -1,3 +1,4 @@
+//Declaration of globally used Modules and librarys Asko Mikkola 1600397
 import { BrowserModule } from '@angular/platform-browser';
 import { ErrorHandler, NgModule } from '@angular/core';
 import { IonicApp, IonicErrorHandler, IonicModule } from 'ionic-angular';

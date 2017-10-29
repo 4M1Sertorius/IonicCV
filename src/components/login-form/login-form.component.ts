@@ -10,13 +10,15 @@ import { LoginResponse } from "../../models/login/login-response.interface";
 })
 export class LoginFormComponent {
 
+  //declaration of account Asko Mikkola 1600397
   account = {} as Account;
   @Output() loginStatus: EventEmitter<any>;
 
+//Constructor for LoginPage authentication and errorhandlers(LoginResponse)
   constructor(private afAuth: AngularFireAuth, private NavCtrl: NavController) {
     this.loginStatus = new EventEmitter<any>();
   }
-
+//Checks the user credentials
   async login() {
      try {
       const result: LoginResponse = {
@@ -24,6 +26,7 @@ export class LoginFormComponent {
       } 
       this.loginStatus.emit(result);
     }
+//Points out errors and drives errors to the LoginResponse
     catch(e){
       console.error(e);
       const error: LoginResponse = {
@@ -32,16 +35,10 @@ export class LoginFormComponent {
       this.loginStatus.emit(error);
     }
   }
+//For the LoginPage Registerbutton
     navigateToRegisterPage(){
       this.NavCtrl.push('RegisterPage');
   }
 }
-  //Doesn't give "Go back" arrow if loads page TabsPage
-/*   navigateToPage(pageName: string){
-    if(pageName === 'TabsPage'){
-      this.NavCtrl.setRoot(pageName)
-    }
-    else {
-      this.NavCtrl.push(pageName)
-    } */
+
 

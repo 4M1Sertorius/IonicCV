@@ -5,7 +5,7 @@ import { LoginResponse } from "../../models/login/login-response.interface";
 
 /*
   Generated class for the AuthProvider provider.
-
+Asko Mikkola 1600397
   See https://angular.io/guide/dependency-injection for more info on providers
   and Angular DI.
 */
@@ -13,7 +13,6 @@ import { LoginResponse } from "../../models/login/login-response.interface";
 export class AuthProvider {
 
   constructor(private auth: AngularFireAuth) {
-    console.log('Hello AuthProvider Provider');
   }
 
 }

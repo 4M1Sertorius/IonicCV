@@ -9,11 +9,13 @@ import { ToastController } from "ionic-angular";
 })
 export class RegisterFormComponent {
 
+//declaration of account Asko Mikkola 1600397
   account = {} as Account
 
   constructor(private toast: ToastController, private afAuth: AngularFireAuth) {
   }
 
+  //Tries if valid email and password, creates account if valid
   async register() {
     try{
       const result = await 
@@ -24,6 +26,7 @@ export class RegisterFormComponent {
         }).present();
         console.log(result);
       }
+  //If not valid catches the error and describes it and pops the explanation
       catch (e) {
        console.error(e);
        this.toast.create({

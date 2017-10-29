@@ -1,3 +1,4 @@
+// Automatedly generated code Asko Mikkola 1600397
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
 

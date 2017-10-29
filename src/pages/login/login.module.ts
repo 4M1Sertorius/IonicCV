@@ -1,3 +1,4 @@
+//Declaration used in LoginPage Asko Mikkola 1600397
 import { NgModule } from '@angular/core';
 import { IonicPageModule } from 'ionic-angular';
 import { LoginPage } from './login';

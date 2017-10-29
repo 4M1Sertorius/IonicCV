@@ -1,15 +1,20 @@
 <ion-card>
     <ion-card-content>
       <ion-item>
+        <!--- Email field for registration  Asko Mikkola 1600397-->
         <ion-label floating>Email Address</ion-label>
+        <!-- Email field type description  -->
         <ion-input [(ngModel)]="account.email" type="email"></ion-input>
       </ion-item>
       <ion-item>
+        <!--- Password field for registration -->
         <ion-label floating>Password</ion-label>
+        <!-- password field type description  -->
         <ion-input [(ngModel)]="account.password" type="password"></ion-input>
       </ion-item>
     </ion-card-content>
     <ion-row>
+      <!-- activation of register() method for register button  -->
       <button ion-button (click)="register()">Register</button>
     </ion-row>
   </ion-card>

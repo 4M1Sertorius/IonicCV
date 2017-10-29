@@ -1,19 +1,24 @@
-<!-- Generated template for the LoginFormComponent component -->
 <div>
     <ion-card>
         <ion-card-content>
             <ion-item>
+              <!-- email field  Asko Mikkola 1600397-->
                 <ion-label floating>Email Address</ion-label>
+              <!-- email field type description  -->
                 <ion-input [(ngModel)]="account.email" type="email"></ion-input>
               </ion-item>
               <ion-item>
+              <!-- password field -->
                 <ion-label floating>Password</ion-label>
+              <!-- password field type description  -->
                 <ion-input [(ngModel)]="account.password" type="password"></ion-input>
               </ion-item>
         </ion-card-content>
         <ion-row class="login-form__buttons">
           <div></div>
+          <!-- navigation to the RegisterPage  -->
           <button ion-button (click)='navigateToRegisterPage()' color="secondary">Register</button>
+          <!-- button action for checking the form fields  -->
           <button ion-button (click)="login()" color="primary">Login</button>
         </ion-row>
       </ion-card>
